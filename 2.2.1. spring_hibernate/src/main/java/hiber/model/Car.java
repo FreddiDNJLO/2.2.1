@@ -1,7 +1,5 @@
 package hiber.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.persistence.*;
 
 @Entity
@@ -17,7 +15,6 @@ public class Car {
     @OneToOne
     private User user;
 
-    @Autowired
     public Car(User user) {
         this.user = user;
     }
